@@ -1,0 +1,16 @@
+{
+  "name": "Aircall customer calls",
+  "short_name": "aircall",
+  "readable_collection_id": "aircall-demo",
+  "authentication": {
+    "credentials": {
+      "api_id": "YOUR_AIRCALL_API_ID",
+      "api_token": "YOUR_AIRCALL_API_TOKEN"
+    }
+  },
+  "config": {
+    "include_transcriptions": true,
+    "include_summaries": true
+  },
+  "sync_immediately": true
+}

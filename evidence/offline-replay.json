@@ -1,0 +1,40 @@
+{
+  "transport": "httpx.MockTransport; no network",
+  "native_http_client": true,
+  "native_source_registries": true,
+  "native_text_builder_batch": true,
+  "native_hash_computer": true,
+  "file_or_audio_conversion_invoked": false,
+  "produced_entity_ids": [
+    "812",
+    "813"
+  ],
+  "content_hashes": {
+    "812": "0185f29528804ec68f970330bcf69c41971859b740662f9f485d625d22d6252e",
+    "813": "2812e5e39f5503b4cc0b6865af26aadf4e51db44fb046151f42d60693aeba571"
+  },
+  "fictional_requests": [
+    {
+      "method": "GET",
+      "url": "https://api.aircall.io/v1/calls?per_page=50&page=1&order=asc&fetch_contact=true&to=1792150542"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.aircall.io/v1/calls/812/transcription?mode=async"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.aircall.io/v1/calls/812/summary"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.aircall.io/v1/calls/813/transcription?mode=async"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.aircall.io/v1/calls/813/summary"
+    }
+  ],
+  "live_aircall": false,
+  "vector_index": false
+}

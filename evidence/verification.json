@@ -1,0 +1,90 @@
+{
+  "verified_at": "2026-10-15T21:02:40.469548+02:00",
+  "repository": "https://github.com/airweave-ai/airweave",
+  "base_commit": "1ebe1af2dbfb90f3334410721e69997e4f02b320",
+  "branch": "codex/aircall-connector",
+  "python": "3.13.2",
+  "changed_files": [
+    "backend/airweave/platform/configs/auth.py",
+    "backend/airweave/platform/configs/config.py",
+    "backend/airweave/platform/sources/__init__.py",
+    "backend/airweave/platform/sources/aircall.py",
+    "backend/airweave/platform/entities/__init__.py",
+    "backend/airweave/platform/entities/aircall.py",
+    "backend/tests/unit/platform/sources/test_aircall.py",
+    "backend/tests/unit/platform/sources/fixtures/aircall.json"
+  ],
+  "checks": {
+    "ruff-lint": {
+      "exit_code": 0
+    },
+    "ruff-format": {
+      "exit_code": 0
+    },
+    "diff-check": {
+      "exit_code": 0
+    },
+    "mypy-new-runtime-modules": {
+      "exit_code": 0,
+      "scope": [
+        "airweave/platform/sources/aircall.py",
+        "airweave/platform/entities/aircall.py"
+      ],
+      "arguments": [
+        "--follow-imports=skip",
+        "--ignore-missing-imports"
+      ]
+    },
+    "patch-clean-base": {
+      "exit_code": 0,
+      "base_commit": "1ebe1af2dbfb90f3334410721e69997e4f02b320",
+      "method": "git archive of base backend; git apply only the Aircall patch; execute tests and replay in temporary checkout"
+    },
+    "replay-helper-import-and-help": {
+      "exit_code": 0,
+      "backend_bootstrap_on_import": false
+    }
+  },
+  "tests": {
+    "connector": {
+      "passed": 35,
+      "failed": 0
+    },
+    "targeted_total": {
+      "passed": 207,
+      "failed": 0
+    },
+    "warnings": "Six upstream deprecation warnings in Pydantic/Fireflies"
+  },
+  "test_command": "python -m pytest -o addopts= -o log_cli=false tests/unit/platform/sources/test_aircall.py tests/unit/platform/sources/test_fireflies.py tests/unit/platform/sources/test_freshdesk.py tests/unit/platform/sources/test_http_helpers.py airweave/domains/sources/tests/test_registry.py airweave/domains/sources/tests/test_lifecycle.py airweave/domains/sources/tests/test_validation.py airweave/domains/entities/tests/test_registry.py airweave/domains/sync_pipeline/tests/test_text_builder.py -q",
+  "offline_replay": {
+    "entities": 2,
+    "source_registered": true,
+    "source_service_schema": true,
+    "native_text_builder_batch": true,
+    "native_hash_computer": true
+  },
+  "live_aircall_requests": 0,
+  "hosted_connector_deployments": 0,
+  "database_or_vector_index_tested": false,
+  "docker_started": false,
+  "limitations": [
+    "No live Aircall account validation",
+    "No database-backed sync or retrieval/search validation",
+    "Private-account Basic auth only; no partner OAuth installation",
+    "Full sync only; no webhooks or incremental cursor",
+    "10,000 matching-call cap fails explicitly; scope must be narrowed",
+    "No source-level per-agent ACL mapping",
+    "Current private/hosted Airweave compatibility unconfirmed; targets archived public code"
+  ],
+  "reviewed_on": "2026-10-16",
+  "review_report": "docs/validation.md",
+  "clean_base_execution": {
+    "base_commit": "1ebe1af2dbfb90f3334410721e69997e4f02b320",
+    "patch_applied": true,
+    "tests_exit_code": 0,
+    "replay_exit_code": 0
+  },
+  "default_content_mode": "Call metadata/notes/tags; transcripts and summaries explicitly opt in",
+  "report_sanitization": "Local filesystem paths and test hostname sanitized in shareable logs/XML"
+}

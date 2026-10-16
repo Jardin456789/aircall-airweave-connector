@@ -1,0 +1,177 @@
+[
+  {
+    "name": "test_native_registry_contract_and_embeddable_schema",
+    "status": "passed",
+    "seconds": "0.886"
+  },
+  {
+    "name": "test_pagination_and_actual_airweave_text_building",
+    "status": "passed",
+    "seconds": "0.004"
+  },
+  {
+    "name": "test_late_transcript_is_picked_up_with_stable_identity",
+    "status": "passed",
+    "seconds": "0.002"
+  },
+  {
+    "name": "test_metadata_only_mode_never_requests_ai_endpoints",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_calls_failures_are_not_empty_successes[401-SourceAuthError]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_calls_failures_are_not_empty_successes[403-SourceEntityForbiddenError]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_calls_failures_are_not_empty_successes[404-SourceEntityNotFoundError]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_optional_403_is_not_treated_as_missing_transcript",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_transient_failures_retry_and_recover[429]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_transient_failures_retry_and_recover[500]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_exhausted_server_failure_propagates",
+    "status": "passed",
+    "seconds": "0.002"
+  },
+  {
+    "name": "test_aircall_reset_header_is_respected",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_incomplete_pagination_fails_loudly[body0-10,000]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_incomplete_pagination_fails_loudly[body1-unexpected page]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_incomplete_pagination_fails_loudly[body2-cannot advance]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_incomplete_pagination_fails_loudly[body3-invalid calls pagination]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_incomplete_pagination_fails_loudly[body4-before all calls]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_incomplete_pagination_fails_loudly[body5-invalid calls pagination]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_provider_next_link_never_receives_credentials",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_mismatched_transcript_call_id_is_rejected",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_empty_credentials_are_rejected[api_id- ]",
+    "status": "passed",
+    "seconds": "0.000"
+  },
+  {
+    "name": "test_empty_credentials_are_rejected[api_token-]",
+    "status": "passed",
+    "seconds": "0.000"
+  },
+  {
+    "name": "test_invalid_time_range_is_rejected",
+    "status": "passed",
+    "seconds": "0.000"
+  },
+  {
+    "name": "test_unsupported_auth_fails_with_domain_error[auth0]",
+    "status": "passed",
+    "seconds": "0.000"
+  },
+  {
+    "name": "test_unsupported_auth_fails_with_domain_error[auth1]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_duplicate_call_ids_cannot_complete_a_full_sync[True]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_duplicate_call_ids_cannot_complete_a_full_sync[False]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_untouched_creation_form_matches_backend_defaults",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_malformed_call_object_fails_with_domain_error",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_summary_timestamp_without_offset_is_treated_as_utc",
+    "status": "passed",
+    "seconds": "0.000"
+  },
+  {
+    "name": "test_missing_call_state_cannot_look_like_an_empty_sync[call0]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_missing_call_state_cannot_look_like_an_empty_sync[call1]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_missing_call_state_cannot_look_like_an_empty_sync[call2]",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_redirect_does_not_forward_basic_credentials",
+    "status": "passed",
+    "seconds": "0.001"
+  },
+  {
+    "name": "test_lifecycle_normalizes_api_credentials_and_validates_the_native_source",
+    "status": "passed",
+    "seconds": "0.607"
+  }
+]

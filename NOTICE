@@ -1,0 +1,11 @@
+Aircall connector for Airweave
+
+Connector contribution by David Uch, 2026.
+
+This repository includes code and modifications based on Airweave's public source:
+https://github.com/airweave-ai/airweave
+Base commit: 1ebe1af2dbfb90f3334410721e69997e4f02b320
+Copyright (c) 2025 Airweave
+MIT license; the upstream copyright and permission notice are retained in LICENSE.
+
+Aircall and Airweave names identify the platforms this independent contribution targets.

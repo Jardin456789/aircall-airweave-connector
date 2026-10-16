@@ -1,0 +1,2 @@
+# Unified patches contain single-space context lines that must be preserved.
+*.patch -whitespace

@@ -1,0 +1,25 @@
+........................................................................ [ 34%]
+........................................................................ [ 69%]
+...............................................................          [100%]
+=============================== warnings summary ===============================
+airweave/schemas/connect_session.py:30
+  <backend>/airweave/schemas/connect_session.py:30: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+    class ConnectSessionCreate(BaseModel):
+
+airweave/schemas/connect_session.py:69
+  <backend>/airweave/schemas/connect_session.py:69: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+    class ConnectSessionResponse(BaseModel):
+
+airweave/schemas/connect_session.py:94
+  <backend>/airweave/schemas/connect_session.py:94: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+    class ConnectSessionContext(BaseModel):
+
+tests/unit/platform/sources/test_fireflies.py::test_parse_epoch_ms_valid
+tests/unit/platform/sources/test_fireflies.py::test_parse_epoch_ms_invalid
+tests/unit/platform/sources/test_fireflies.py::test_transcript_to_entity_basic_mapping
+  <backend>/airweave/platform/entities/fireflies.py:24: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+    return datetime.utcfromtimestamp(ms / 1000.0)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: <workspace>/.work/aircall-review-clean.xml -
+207 passed, 6 warnings in 3.48s
